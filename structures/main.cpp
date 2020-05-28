@@ -7,24 +7,24 @@
 //
 
 #include <iostream>
-#include "queue.hpp"
+#include "union_find.hpp"
 
 int main() {
     
     std::cout.setf(std::ios::boolalpha);
-
-    queue<int> stck;
-    stck.push(10);
-    stck.push(100);
-    stck.push(500);
-    stck.push(90);
     
-    while(!stck.empty()) {
-        std::cout << stck.peek() << std::endl;
-        stck.pop();
-    }
+    unionfind uf(10);
     
-    std::cout << stck.size() << std::endl;
+    uf.unify(2, 3);
+    uf.unify(3, 9);
+    uf.unify(4, 8);
+    uf.unify(2, 8);
+    uf.unify(1, 6);
+    uf.unify(7, 5);
+    uf.unify(6, 5);
+    uf.unify(0, 4);
+    uf.unify(7, 2);
     
+    uf.inspect();
 }
 
