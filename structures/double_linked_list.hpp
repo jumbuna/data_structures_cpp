@@ -16,6 +16,7 @@
 
 template <class T>
 struct doublelinkedlist {
+    ~doublelinkedlist();
     void addfront(T item);
     void addback(T item);
     T removefront();
@@ -162,6 +163,11 @@ void doublelinkedlist<T>::clear() {
     }
     //_tail = nullptr;
     _size = 0;
+}
+
+template <class T>
+doublelinkedlist<T>::~doublelinkedlist() {
+    clear();
 }
 
 

@@ -7,24 +7,23 @@
 //
 
 #include <iostream>
-#include "union_find.hpp"
+#include "stack.hpp"
 
 int main() {
     
     std::cout.setf(std::ios::boolalpha);
+    stack<int> stack;
+    stack.push(500);
+    stack.push(500);
+    stack.push(500);
+    stack.push(500);
+    stack.push(500);
+    stack.push(500);
+    stack.push(500);
+    stack.push(500);
     
-    unionfind uf(10);
+    stack.clear();
     
-    uf.unify(2, 3);
-    uf.unify(3, 9);
-    uf.unify(4, 8);
-    uf.unify(2, 8);
-    uf.unify(1, 6);
-    uf.unify(7, 5);
-    uf.unify(6, 5);
-    uf.unify(0, 4);
-    uf.unify(7, 2);
-    
-    uf.inspect();
+    std::cout << stack.empty() << std::endl;
 }
 
