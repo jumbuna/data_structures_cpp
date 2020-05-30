@@ -167,7 +167,7 @@ void doublelinkedlist<T>::clear() {
 
 template <class T>
 doublelinkedlist<T>::~doublelinkedlist() {
-    clear();
+    //clear();
 }
 
 
