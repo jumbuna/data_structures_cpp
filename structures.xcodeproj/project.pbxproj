@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		151AA6EB24805307002EA513 /* union_find.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 151AA6EA24805307002EA513 /* union_find.hpp */; };
+		151AA6ED2480EE88002EA513 /* binary_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 151AA6EC2480EE88002EA513 /* binary_tree.cpp */; };
 		1560EE44247FC678007432AA /* dynamic_array.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE43247FC678007432AA /* dynamic_array.hpp */; };
 		1560EE4B247FD3D0007432AA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE4A247FD3D0007432AA /* main.cpp */; };
 		1560EE4F247FD6F5007432AA /* binary_heap.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE4E247FD6F5007432AA /* binary_heap.hpp */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		151AA6EA24805307002EA513 /* union_find.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = union_find.hpp; sourceTree = "<group>"; };
+		151AA6EC2480EE88002EA513 /* binary_tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binary_tree.cpp; sourceTree = "<group>"; };
 		1560EE40247FC678007432AA /* structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = structures; sourceTree = BUILT_PRODUCTS_DIR; };
 		1560EE43247FC678007432AA /* dynamic_array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dynamic_array.hpp; sourceTree = "<group>"; };
 		1560EE4A247FD3D0007432AA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				1560EE56247FF2D8007432AA /* double_linked_list.hpp */,
 				1560EE5824803371007432AA /* queue.hpp */,
 				151AA6EA24805307002EA513 /* union_find.hpp */,
+				151AA6EC2480EE88002EA513 /* binary_tree.cpp */,
 			);
 			path = structures;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				1560EE51247FE1C6007432AA /* priority_queue.hpp in Sources */,
 				1560EE57247FF2D8007432AA /* double_linked_list.hpp in Sources */,
 				1560EE53247FE3ED007432AA /* exceptions.hpp in Sources */,
+				151AA6ED2480EE88002EA513 /* binary_tree.cpp in Sources */,
 				1560EE44247FC678007432AA /* dynamic_array.hpp in Sources */,
 				1560EE55247FF0D6007432AA /* stack.hpp in Sources */,
 				1560EE4F247FD6F5007432AA /* binary_heap.hpp in Sources */,

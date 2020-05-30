@@ -16,7 +16,7 @@ template <class T>
 struct dynamicarray {
     dynamicarray();
     ~dynamicarray() {
-        delete [] _array;
+        delete []_array;
     }
     T& operator[](int index);
     void clear();
