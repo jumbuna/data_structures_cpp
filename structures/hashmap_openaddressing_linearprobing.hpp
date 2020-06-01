@@ -14,7 +14,7 @@ struct hashmap {
     hashmap();
     ~hashmap();
     int hashfunction(T);
-    int probefunction(int);
+    virtual int probefunction(int);
     void insert(T , U);
     void insert(std::pair<T, U>);
     void remove(T);

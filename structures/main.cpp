@@ -7,10 +7,10 @@
 //
 
 #include <iostream>
-#include "hashmap_openaddressing_linearprobing.hpp"
+#include "hashmap_openaddressing_quadraticprobing.hpp"
 
 int main() {
-    hashmap<int, int> hm;
+    qhashmap<int, int> hm;
     hm.insert(5, 8);
     hm.insert(21, 8);
     hm.insert(50, 8);
@@ -29,7 +29,7 @@ int main() {
     
     hm.remove(234);
     
-    hm[234] = 54;
+    hm[234] = 98;
     
-    std::cout << hm[234] << std::endl;
+    std::cout << hm.contains(234) << std::endl;
 }

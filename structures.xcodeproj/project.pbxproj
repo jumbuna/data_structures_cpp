@@ -19,6 +19,7 @@
 		1560EE5924803371007432AA /* queue.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE5824803371007432AA /* queue.hpp */; };
 		1571155524850EC20020AC9F /* hashmap_seperatechaining.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1571155424850EC20020AC9F /* hashmap_seperatechaining.hpp */; };
 		15711557248551E90020AC9F /* hashmap_openaddressing_linearprobing.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 15711556248551E90020AC9F /* hashmap_openaddressing_linearprobing.hpp */; };
+		1571155924857D400020AC9F /* hashmap_openaddressing_quadraticprobing.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1571155824857D400020AC9F /* hashmap_openaddressing_quadraticprobing.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		1560EE5824803371007432AA /* queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = queue.hpp; sourceTree = "<group>"; };
 		1571155424850EC20020AC9F /* hashmap_seperatechaining.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hashmap_seperatechaining.hpp; sourceTree = "<group>"; };
 		15711556248551E90020AC9F /* hashmap_openaddressing_linearprobing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hashmap_openaddressing_linearprobing.hpp; sourceTree = "<group>"; };
+		1571155824857D400020AC9F /* hashmap_openaddressing_quadraticprobing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hashmap_openaddressing_quadraticprobing.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				151AA6EC2480EE88002EA513 /* binary_search_tree.hpp */,
 				1571155424850EC20020AC9F /* hashmap_seperatechaining.hpp */,
 				15711556248551E90020AC9F /* hashmap_openaddressing_linearprobing.hpp */,
+				1571155824857D400020AC9F /* hashmap_openaddressing_quadraticprobing.hpp */,
 			);
 			path = structures;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1560EE4B247FD3D0007432AA /* main.cpp in Sources */,
+				1571155924857D400020AC9F /* hashmap_openaddressing_quadraticprobing.hpp in Sources */,
 				1560EE51247FE1C6007432AA /* priority_queue.hpp in Sources */,
 				1560EE57247FF2D8007432AA /* double_linked_list.hpp in Sources */,
 				1560EE53247FE3ED007432AA /* exceptions.hpp in Sources */,
