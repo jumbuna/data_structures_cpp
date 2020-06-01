@@ -7,18 +7,29 @@
 //
 
 #include <iostream>
-#include "hashmap_seperatechaining.hpp"
+#include "hashmap_openaddressing_linearprobing.hpp"
 
 int main() {
-    hashmap<int, int> intmap;
-    intmap.insert(30, 500);
-    intmap[40] = 800;
-    intmap.insert({900, 500});
+    hashmap<int, int> hm;
+    hm.insert(5, 8);
+    hm.insert(21, 8);
+    hm.insert(50, 8);
+    hm.insert(54, 8);
+    hm.insert(251, 8);
+    hm.insert(560, 8);
+    hm.insert(575, 8);
+    hm.insert(2132, 8);
+    hm.insert(5078, 8);
+    hm.insert(865, 8);
+    hm.insert(643, 8);
+    hm.insert(234, 86);
+    hm.insert(789, 8);
+    hm.insert(762, 8);
+    hm.insert(509, 8);
     
-    intmap.remove(30);
+    hm.remove(234);
     
-    std::cout << intmap[40] << std::endl;
-    std::cout << intmap.contains(30) << std::endl;
+    hm[234] = 54;
+    
+    std::cout << hm[234] << std::endl;
 }
-
-
