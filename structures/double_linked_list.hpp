@@ -77,6 +77,8 @@ T doublelinkedlist<T>::removeback() {
     if(_head != _tail) {
         _tail = _tail->_previous;
         _tail->_next = nullptr;
+    }else {
+        _head = nullptr;
     }
     node _return = *_nodeptr;
     delete _nodeptr;
@@ -91,6 +93,8 @@ T doublelinkedlist<T>::removefront() {
     if(_head != _tail) {
         _head = _head->_next;
         _head->_previous = nullptr;
+    }else{
+        _tail = nullptr;
     }
     node _return = *_nodeptr;
     delete _nodeptr;
@@ -140,9 +144,12 @@ bool doublelinkedlist<T>::contains(T item) {
 
 template <class T>
 void doublelinkedlist<T>::removeat(int index) {
-    if(index == 0) removefront();
-    else if (index == _size-1) removeback();
+    if(index == 0)
+        removefront();
+    else if (index == _size-1)
+        removeback();
     else {
+        --_size;
         node* _node = _head;
         for(int i = 0; i < index; i++) {
             _node = _node->_next;
@@ -151,7 +158,6 @@ void doublelinkedlist<T>::removeat(int index) {
         _node->_next->_previous = _node->_previous;
         delete _node;
     }
-    --_size;
 }
 
 template <class T>

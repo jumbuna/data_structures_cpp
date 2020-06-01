@@ -6,14 +6,14 @@
 //  Copyright © 2020 jumbuna. All rights reserved.
 //
 
+#pragma once
+
 #include "double_linked_list.hpp"
-#include <iostream>
-#include <utility>
 
 template <class T, class U>
 struct hashmap {
     hashmap();
-    //~hashmap();
+    ~hashmap();
     void insert(T, U);
     void insert(std::pair<T, U>);
     void remove(T);
@@ -135,7 +135,7 @@ U& hashmap<T,U>::operator[](T _key) {
             }
         }
     }
-    U* pntr = new U();
+    U* pntr = new U;
     node* _newnode = new node(_key, pntr);
     __insert((int)hash, _newnode);
     return *(_newnode->_value);
@@ -194,23 +194,17 @@ void hashmap<T,U>::resize() {
     _array = _newdllpntarr;
 }
 
-struct entity {
-    entity(){
-        _age = 0;
-        _name = "name";
+template <class T, class U>
+hashmap<T, U>::~hashmap() {
+    for(int i=0; i < _size; i++) {
+        auto _dll = _array[i];
+        if(!_dll) continue;
+        for(int j=0; j < _dll->size(); j++) {
+            node* _node = _dll->get(j);
+            delete _node->_value;
+            delete _node;
+        }
+        delete _dll;
     }
-    entity(int age, std::string name)
-    :_age(age), _name(name){}
-    int _age;
-    std::string _name;
-};
-
-int main() {
-    hashmap<const char*, entity> hm;
-    hm.insert({"jumbuna", {20, "jumbuna"}});
-    hm.insert("jacob", {50, "jacob"});
-    std::cout << hm.size() <<"\n";
-    hm.remove("jumbuna");
-    hm["jumbun"] = entity(50, "john");
-    std::cout << hm["jumbun"]._age << std::endl;
+    delete[] _array;
 }

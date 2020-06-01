@@ -17,7 +17,7 @@
 		1560EE55247FF0D6007432AA /* stack.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE54247FF0D6007432AA /* stack.hpp */; };
 		1560EE57247FF2D8007432AA /* double_linked_list.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE56247FF2D8007432AA /* double_linked_list.hpp */; };
 		1560EE5924803371007432AA /* queue.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1560EE5824803371007432AA /* queue.hpp */; };
-		1571155524850EC20020AC9F /* hashmap_seperatechaining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1571155424850EC20020AC9F /* hashmap_seperatechaining.cpp */; };
+		1571155524850EC20020AC9F /* hashmap_seperatechaining.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 1571155424850EC20020AC9F /* hashmap_seperatechaining.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 		1560EE54247FF0D6007432AA /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
 		1560EE56247FF2D8007432AA /* double_linked_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = double_linked_list.hpp; sourceTree = "<group>"; };
 		1560EE5824803371007432AA /* queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = queue.hpp; sourceTree = "<group>"; };
-		1571155424850EC20020AC9F /* hashmap_seperatechaining.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hashmap_seperatechaining.cpp; sourceTree = "<group>"; };
+		1571155424850EC20020AC9F /* hashmap_seperatechaining.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hashmap_seperatechaining.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				1560EE5824803371007432AA /* queue.hpp */,
 				151AA6EA24805307002EA513 /* union_find.hpp */,
 				151AA6EC2480EE88002EA513 /* binary_search_tree.hpp */,
-				1571155424850EC20020AC9F /* hashmap_seperatechaining.cpp */,
+				1571155424850EC20020AC9F /* hashmap_seperatechaining.hpp */,
 			);
 			path = structures;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 				1560EE4F247FD6F5007432AA /* binary_heap.hpp in Sources */,
 				1560EE5924803371007432AA /* queue.hpp in Sources */,
 				151AA6EB24805307002EA513 /* union_find.hpp in Sources */,
-				1571155524850EC20020AC9F /* hashmap_seperatechaining.cpp in Sources */,
+				1571155524850EC20020AC9F /* hashmap_seperatechaining.hpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
