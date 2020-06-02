@@ -7,29 +7,10 @@
 //
 
 #include <iostream>
-#include "hashmap_openaddressing_quadraticprobing.hpp"
+#include "fenwick_tree.hpp"
 
 int main() {
-    qhashmap<int, int> hm;
-    hm.insert(5, 8);
-    hm.insert(21, 8);
-    hm.insert(50, 8);
-    hm.insert(54, 8);
-    hm.insert(251, 8);
-    hm.insert(560, 8);
-    hm.insert(575, 8);
-    hm.insert(2132, 8);
-    hm.insert(5078, 8);
-    hm.insert(865, 8);
-    hm.insert(643, 8);
-    hm.insert(234, 86);
-    hm.insert(789, 8);
-    hm.insert(762, 8);
-    hm.insert(509, 8);
-    
-    hm.remove(234);
-    
-    hm[234] = 98;
-    
-    std::cout << hm.contains(234) << std::endl;
+    int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
+    fenwicktree fenwick(array, 30);
+    std::cout << fenwick.sum(1, 30) << std::endl;
 }
