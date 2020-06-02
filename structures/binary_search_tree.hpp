@@ -1,10 +1,12 @@
 //
-//  binary_tree.cpp
+//  binary_tree.hpp
 //  structures
 //
 //  Created by jumbuna on 29/05/2020.
 //  Copyright © 2020 jumbuna. All rights reserved.
 //
+
+#pragma once
 
 #include <iostream>
 #include "dynamic_array.hpp"

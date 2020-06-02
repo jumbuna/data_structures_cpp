@@ -1,5 +1,5 @@
 //
-//  double_linked_list.cpp
+//  double_linked_list.hpp
 //  structures
 //
 //  Created by jumbuna on 28/05/2020.

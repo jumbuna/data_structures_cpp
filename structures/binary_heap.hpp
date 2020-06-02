@@ -1,5 +1,5 @@
 //
-//  binary_heap.cpp
+//  binary_heap.hpp
 //  structures
 //
 //  Created by jumbuna on 28/05/2020.

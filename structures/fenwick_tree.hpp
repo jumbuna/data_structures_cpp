@@ -1,12 +1,12 @@
 //
-//  fenwick_tree.cpp
+//  fenwick_tree.hpp
 //  structures
 //
 //  Created by jumbuna on 02/06/2020.
 //  Copyright © 2020 jumbuna. All rights reserved.
 //
 
-#include <iostream>
+#pragma once
 
 template <class T>
 struct fenwicktree {

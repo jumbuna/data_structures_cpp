@@ -1,5 +1,5 @@
 //
-//  priority_queue.cpp
+//  priority_queue.hpp
 //  structures
 //
 //  Created by jumbuna on 28/05/2020.

@@ -1,5 +1,5 @@
 //
-//  hashmap_seperatechaining.cpp
+//  hashmap_seperatechaining.hpp
 //  structures
 //
 //  Created by jumbuna on 01/06/2020.

@@ -1,5 +1,5 @@
 //
-//  queue.cpp
+//  queue.hpp
 //  structures
 //
 //  Created by jumbuna on 28/05/2020.
