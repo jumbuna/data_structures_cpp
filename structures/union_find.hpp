@@ -76,10 +76,4 @@ bool unionfind::full() {
     return connected(0, _size-1);
 }
 
-void unionfind::inspect() {
-    for(int i = 0; i < _size; i++) {
-        std::cout << _ids[i] << ", ";
-    }
-    std::cout << std::endl;
-}
 #endif
